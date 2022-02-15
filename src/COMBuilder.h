@@ -1,3 +1,4 @@
+#pragma once
 #define _WIN32_DCOM
 #include <iostream>
 #include <wbemidl.h>

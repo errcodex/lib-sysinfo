@@ -1,4 +1,4 @@
-#include "LibSysinfo.h"
+#include "lib-sysinfo/LibSysinfo.h"
 #include "LibSysinfoImpl.h"
 
 LibSysinfo::LibSysinfo()
