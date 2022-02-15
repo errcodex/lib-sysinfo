@@ -22,7 +22,8 @@ bool LibSysinfo::Release()
 	return impl->Release();
 }
 
-std::string LibSysinfo::GetOS()
+bool LibSysinfo::GetOS(SYSINFO::OS& info)
 {
-	return impl->GetOS();
+	strcpy(info.name, impl->GetOS().c_str());
+	return true;
 }

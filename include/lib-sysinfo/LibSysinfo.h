@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "lib-sysinfo/SYSINFO.h"
 
 #ifdef LIBSYSINFO_EXPORT
 #define LIBSYSINFO_API __declspec(dllexport)
@@ -16,7 +17,7 @@ public:
 	bool Initialize();
 	bool Release();
 
-	std::string GetOS();
+	bool GetOS(SYSINFO::OS& info);
 
 private:
 	LibSysinfoImpl* impl = nullptr;
