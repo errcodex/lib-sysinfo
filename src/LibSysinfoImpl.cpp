@@ -15,7 +15,7 @@ LibSysinfoImpl::~LibSysinfoImpl()
 bool LibSysinfoImpl::Initialize()
 {
 	if (!com->Initialize())
-		return false;
+		0; // return false;
 
 	if (!wmi->Initialize())
 		return false;
